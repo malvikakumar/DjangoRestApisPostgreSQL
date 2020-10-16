@@ -9,3 +9,11 @@
     pip install -r requirements.txt  
     sh launch.sh
     ```
+
+### Curl to register new users
+```shell
+curl --location --request POST 'http://localhost:8080/api/register' \
+--form 'username=<user>' \
+--form 'password=<password>' \
+--form 'email=<email>'
+```
